@@ -1,0 +1,121 @@
+const frase = [
+  "Believe in yourself and all that you are.",
+  "Dream big and dare to fail.",
+  "The best time to start was yesterday. The next best time is now.",
+  "Every day is a new beginning.",
+  "Push yourself, because no one else is going to do it for you.",
+  "Great things never come from comfort zones.",
+  "Success is not for the lazy.",
+  "Stay positive, work hard, make it happen.",
+  "Don’t stop until you’re proud.",
+  "Difficult roads often lead to beautiful destinations.",
+  "Do something today that your future self will thank you for.",
+  "Work in silence, let success make the noise.",
+  "Don’t wish for it, work for it.",
+  "Small steps every day lead to big results.",
+  "Your only limit is your mind.",
+  "Dream it. Believe it. Build it.",
+  "Don’t call it a dream, call it a plan.",
+  "Consistency is what transforms average into excellence.",
+  "If it doesn’t challenge you, it won’t change you.",
+  "The harder you work for something, the greater you’ll feel when you achieve it.",
+  "Focus on progress, not perfection.",
+  "Act as if what you do makes a difference. It does.",
+  "Start where you are. Use what you have. Do what you can.",
+  "The secret of getting ahead is getting started.",
+  "It always seems impossible until it’s done.",
+  "Don’t count the days, make the days count.",
+  "Doubt kills more dreams than failure ever will.",
+  "Be stronger than your excuses.",
+  "Do what you can with all you have.",
+  "Don’t let yesterday take up too much of today.",
+  "Hustle in silence and let your success be the noise.",
+  "Your future is created by what you do today, not tomorrow.",
+  "Push harder than yesterday if you want a different tomorrow.",
+  "Success doesn’t come from what you do occasionally, it comes from what you do consistently.",
+  "Don’t stop when you’re tired. Stop when you’re done.",
+  "Discipline is the bridge between goals and accomplishment.",
+  "The best view comes after the hardest climb.",
+  "It’s not about being the best. It’s about being better than you were yesterday.",
+  "Winners are not people who never fail, but people who never quit.",
+  "Don’t let the fear of losing be greater than the excitement of winning.",
+  "Opportunities don’t happen, you create them.",
+  "Big journeys begin with small steps.",
+  "Do what others won’t today, so you can do what others can’t tomorrow.",
+  "One day or day one. You decide.",
+  "Don’t limit your challenges. Challenge your limits.",
+  "When you feel like quitting, think about why you started.",
+  "If you get tired, learn to rest, not quit.",
+  "Work hard in silence, let success speak.",
+  "Don’t be afraid to start over. It’s a chance to build something better.",
+  "Success is not in what you have, but who you are.",
+  "Success usually comes to those who are too busy to be looking for it.",
+  "Dream bigger. Do bigger.",
+  "Hard work beats talent when talent doesn’t work hard.",
+  "Don’t wait for opportunity. Create it.",
+  "Good things come to those who hustle.",
+  "Wake up with determination. Go to bed with satisfaction.",
+  "You are capable of amazing things.",
+  "Believe you can and you’re halfway there.",
+  "Don’t let small minds convince you that your dreams are too big.",
+  "Success is the sum of small efforts, repeated day in and day out.",
+  "Don’t just wish for it, work for it.",
+  "The way to get started is to quit talking and begin doing.",
+  "Don’t stop until you’re proud.",
+  "Courage is one step ahead of fear.",
+  "Do something today your future self will thank you for.",
+  "Perseverance is not a long race; it’s many short races one after another.",
+  "The man who moves a mountain begins by carrying away small stones.",
+  "Start today. Not tomorrow.",
+  "Be so good they can’t ignore you.",
+  "Keep going. You’re getting there.",
+  "Don’t tell people your plans. Show them your results.",
+  "Action is the foundational key to all success.",
+  "Be fearless in the pursuit of what sets your soul on fire.",
+  "A little progress each day adds up to big results.",
+  "Make each day your masterpiece.",
+  "Difficulties in life don’t come to destroy you, but to help you realize your hidden potential.",
+  "Don’t wait. The time will never be just right.",
+  "Go the extra mile. It’s never crowded.",
+  "Keep pushing forward.",
+  "You didn’t come this far only to come this far.",
+  "Stay focused and never give up.",
+  "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+  "Turn your dreams into plans and your plans into reality.",
+  "Don’t be afraid to give up the good to go for the great.",
+  "You are stronger than you think.",
+  "Your only competition is yourself.",
+  "Focus on your goal. Don’t look in any direction but ahead.",
+  "Winners focus on winning. Losers focus on winners.",
+  "Don’t wait for the perfect moment. Take the moment and make it perfect.",
+  "Failure is simply the opportunity to begin again, this time more intelligently.",
+  "The harder you work, the luckier you get.",
+  "Do it with passion or not at all.",
+  "Don’t quit. Suffer now and live the rest of your life as a champion.",
+  "Step by step and the thing is done.",
+  "A winner is a dreamer who never gives up.",
+  "Keep moving forward no matter what.",
+  "Stay hungry, stay foolish.",
+  "Success is earned, not given.",
+  "Fall seven times and stand up eight."
+];
+
+
+
+const contenedor = document.getElementById('mensaje')
+const boton = document.getElementById('btn')
+
+boton.addEventListener('click', ()=>{
+   
+   if(!Array.isArray(frase) || frase.length === 0 ){
+      contenedor.textContent = 'No hay frases disponibles';
+      return;
+   }
+   
+   
+   let mensaje =  Math.floor(Math.random() * frase.length)
+   contenedor.textContent = frase[mensaje]
+   
+
+
+})

@@ -1,0 +1,387 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* reset css end */
+
+/* fonts */
+
+/* .funnel-display-<uniquifier>  */
+*{
+  font-family: "Funnel Display", sans-serif;
+  box-sizing: border-box;
+
+ 
+}
+
+/* HEADER SECTION */
+
+.header{
+
+  /* LAYOUT */
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 40px;
+
+  /* STYLES */
+  background-color:#a3b18a;
+  
+  /* TYPOGRAPHY */
+  font-family: "Funnel Display", sans-serif;
+  color: ivory;
+  letter-spacing: 2.5px;
+   
+}
+
+.header__menu{
+  /* LAYOUT */
+  display: flex;
+  
+  /* TYPOGRAPHY */
+  font-size: 1.5em;
+  letter-spacing: 2.5px;
+}
+.header__logo{
+  /* TYPOGRAPHY */
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 2.5px;
+}
+
+.header__list{
+  /* LAYOUT */
+  display: flex;
+  gap:20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* PORTADA SECTION */
+
+.portada{
+  /*  LAYOUT */
+ 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+
+  /* STYLES */
+
+  background: url(./background-from-autumn-leaves.jpg);
+  background-size: cover;
+  filter: sepia();
+
+}
+.portada__quote{
+  /* LAYOUT */
+   
+   height: 5rem;
+   width: 55%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* STYLES */
+   background-color: gray;
+   border-radius: 10px;
+   
+   
+  }
+  
+  .portada__quote-p{
+    /* TYPOGRAPHY */
+  font-family: "Funnel Display", sans-serif; ;
+  font-size: 1.5em;
+  letter-spacing: 2.5px;
+  line-height: 25px;
+  color: gold;
+  font-style: italic;
+
+}
+
+.portada__quote-p2{
+  /* LAYOUT */
+  display: none;
+    /* TYPOGRAPHY */
+  font-family: "Funnel Display", sans-serif; ;
+  font-size: 1.5em;
+  letter-spacing: 2.5px;
+  line-height: 45px;
+  color: gold;
+  font-style: italic;
+}
+.portada__textoContainer{
+  /* LAYOUT */
+  
+  height: 10rem;
+  width: 70%;
+  padding: 10px;
+
+}
+
+.portada__parrafo{
+  /* STYLES */
+   background-color: gray;
+   border-radius: 10px;
+   padding: 15px;
+  
+  /* TYPOGRAPHY */
+  font-family: "Funnel Display", sans-serif; ;
+  font-size: 3em;
+  letter-spacing: 2.5px;
+  line-height: 40px;
+  color: rgb(43, 11, 11);
+  font-style: italic;
+}
+.portada__boton{
+  /* LAYOUT */
+  display: flex;
+
+}
+
+.portada__boton-btn{
+  /* LAYOUT */
+  display: flex;
+  padding: 10px 15px;
+  width: 200%;
+  border-radius: 10px;
+  border-color: gray;
+  text-align: center;
+  cursor: pointer;
+
+  /* STYLES */
+  background:gray ;
+
+  /* TYPOGRAPHY */
+  font-family: "Funnel Display", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: gold;
+  
+}
+
+
+/* FOOTER */
+
+.footer{
+  /* LAYOUT */
+ 
+ width: 100%;
+ height: 4rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ /* STYLES */
+
+  background-color:#a3b18a;
+  color: ivory;
+
+  /* TYPOGRAPHY */
+  font-family: "Funnel Display", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: gold;
+
+}
+
+
+/* RESPONSIVE */
+@media (max-width:1213px){
+
+   .portada__quote-p{
+    /* TYPOGRAPHY */
+  
+  font-size: 1.2em;
+  letter-spacing: 2px;
+
+
+}
+
+
+}
+
+@media (max-width:973px){
+
+   .portada__quote-p{
+    /* TYPOGRAPHY */
+  
+  font-size: 1em;
+
+
+}
+
+
+}
+
+@media (max-width:852px){
+.portada__boton-btn{
+  /* LAYOUT */
+  margin-top: 20px;
+
+  
+}
+.portada__parrafo{
+  /* STYLES */
+   
+   padding: 15px;
+  
+  /* TYPOGRAPHY */
+
+  font-size: 3em;
+  letter-spacing: 2.2px;
+  line-height: 45px;
+  
+}
+
+
+}
+
+
+@media (max-width:841px){
+.portada__quote{
+  /* LAYOUT */
+   
+   padding: 60px;
+
+   
+   
+  } 
+.portada__boton-btn{
+  /* LAYOUT */
+  margin-top: 50px;
+
+  
+}
+.portada__parrafo{
+  /* STYLES */
+
+   padding: 15px;
+  
+  /* TYPOGRAPHY */
+  
+  font-size: 2.5em;
+ 
+}
+
+
+}
+
+@media (max-width:688px){
+.portada__quote{
+  /* LAYOUT */
+   
+   padding: 90px;
+
+
+   
+  } 
+
+
+}
+
+@media(max-width:619px) and (min-width:450px) {
+  
+  .header{
+
+  font-size: 0.7em;
+   
+}
+
+
+  .portada__quote-p{
+    display: none;
+  }
+  .portada__quote-p2{
+  display: contents;
+  font-size: 1em;
+ 
+  
+}
+  .portada__quote{
+  /* LAYOUT */
+  
+   
+   padding: 10px;
+   
+   
+  } 
+  .portada__parrafo{
+  /* STYLES */
+   
+   padding: 15px;
+   max-height: 500px;
+  
+  /* TYPOGRAPHY */
+
+  font-size: 2.2em;
+  letter-spacing: 2.2px;
+  line-height: 45px;
+  
+  
+}
+ .portada__boton-btn{
+  /* LAYOUT */
+  margin-top: 180px;
+  margin-bottom: 50px;
+
+  
+} 
+
+
+}
